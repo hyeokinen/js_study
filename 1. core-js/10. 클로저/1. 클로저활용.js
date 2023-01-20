@@ -1,8 +1,8 @@
 
-/*
 
--- num이 전역변수라서 increase함수 이외에도 
-   num의 상태값을 변경시킬 가능성이 존재한다.
+
+// -- num이 전역변수라서 increase함수 이외에도 
+//    num의 상태값을 변경시킬 가능성이 존재한다.
 
 // 카운팅
 let num = 0; // 카운트 상태 변수
@@ -21,9 +21,9 @@ console.log(increase()); // 3?? => 1000
 */
 
 
-//=======================================
+=======================================
 
-/*
+
 
 -- num이 지역변수라서 함수 호출시 재초기화되는 문제
 
@@ -38,18 +38,18 @@ console.log(increase()); // 3?
 */
 
 
-//==================================
+==================================
 
-// const increaseClosure = function() {
+const increaseClosure = function() {
 
-//     let num = 0; // 상태 변수
+    let num = 0; // 상태 변수
 
-//     return function() {
-//         return ++num;
-//     };
-// };
+    return function() {
+        return ++num;
+    };
+};
 
-// const increase = increaseClosure();
+const increase = increaseClosure();
 
 const increase = (() => {
     let num = 0; // 상태 변수
@@ -61,8 +61,8 @@ console.log(increase());
 console.log(increase());
 console.log(increase());
 
-// const another = function() {
-//     return ++num;
-// }
+const another = function() {
+    return ++num;
+}
 
-// another();
+another();
