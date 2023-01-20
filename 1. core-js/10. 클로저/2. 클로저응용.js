@@ -1,4 +1,4 @@
-/*
+
 const increase = (() => {
     let num = 0; // 상태 변수
     return () => ++num;
@@ -16,7 +16,7 @@ console.log(decrease());
 console.log(decrease());
 console.log(increase()); // 2
 
-*/
+
 
 const c = (function() {
     let num = 0;

@@ -8,9 +8,9 @@
 let num = 0; // 카운트 상태 변수
 
 // 카운트 상태 변경 함수
-const increase = function() {
-    return ++num;
-};
+// const increase = function() {
+//     return ++num;
+// };
 
 console.log(increase());
 console.log(increase());
@@ -18,14 +18,14 @@ console.log(increase());
 num = 999;
 
 console.log(increase()); // 3?? => 1000
-*/
-
-
-=======================================
 
 
 
--- num이 지역변수라서 함수 호출시 재초기화되는 문제
+console.log{'======================================='};
+
+
+
+// -- num이 지역변수라서 함수 호출시 재초기화되는 문제
 
 const increase = function() {
     let num = 0; // 상태변수를 지역변수 처리
@@ -35,10 +35,10 @@ const increase = function() {
 console.log(increase());
 console.log(increase());
 console.log(increase()); // 3?
-*/
 
 
-==================================
+
+console.log{'======================================='};
 
 const increaseClosure = function() {
 
